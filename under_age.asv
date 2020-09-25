@@ -1,5 +1,0 @@
-function younger = under_age(age,limit)
-if nargin == 2
-    younger = age < limit;
-else
-    younger = age
