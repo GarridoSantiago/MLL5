@@ -1,1 +1,0 @@
-function summa = halfsum (M)
