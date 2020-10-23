@@ -1,6 +1,6 @@
 function echo = echo_gen (in, fs, delay, amp)
 fsdy=round(fs*delay); %calcula el número de elementos correspondientes al tiempo de delay
-extt=zeros(fsdy,1); % hace un vector de seros con el número calculado arriba (tiempo extra)
+extt=zeros(fsdy,1); % hace un vector de ceros con el número calculado arriba (tiempo extra)
 jecho=[extt;(in.*amp)]; % hace el vector correspondiente al echo amplificado poniendo el tiempo extra al principio
 echo=([in;extt]+jecho); %genera el vector de el audio original con el tiempo extra al final + el vector correspondiente al eco
 
